@@ -1,25 +1,24 @@
 var pixel = document.getElementById("px-input");
 var em = document.getElementById("em-input");
 var output ;
-em.value = pixel.value / 16;
+var parentValue = document.getElementById("parentValue");
+em.value = pixel.value / parentValue.value;
 
-// function pxToEm() {
-//     output = pixel.value / 16 ;
-//     em.value = parseFloat(output.toFixed(3));
 
-// }
+valueUpdate = () => {
+    
+    pixel.value = parentValue.value;
+
+}
+
 pxToEm = () => {
     output = pixel.value / 16 ;
     em.value = parseFloat(output.toFixed(3));
 }
 
 
-// function emToPx() {
-//     output = em.value * 16;
-//     pixel.value = parseFloat(output.toFixed(3));
-// }
 
 emToPx = () => {
     output = em.value * 16;
-    pixel.value = parseFloat(output.toFixed(3));
+    pixel.value = parseFloat(output.toFixed(0));
 }
