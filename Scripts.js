@@ -6,9 +6,7 @@ em.value = pixel.value / parentValue.value;
 
 
 valueUpdate = () => {
-    
-    pixel.value = parentValue.value;
-
+    console.log("working");
 }
 
 pxToEm = () => {
@@ -22,3 +20,5 @@ emToPx = () => {
     output = em.value * 16;
     pixel.value = parseFloat(output.toFixed(0));
 }
+
+
