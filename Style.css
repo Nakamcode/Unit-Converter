@@ -39,8 +39,8 @@ main{
     background-color: blue;
 }
 .blur{
-    width: 400px;
-    height: 400px;
+    width: 25em;
+    height: 25em;
     position: absolute;
     filter: blur(900px);
     opacity: 0.4;
@@ -109,4 +109,15 @@ td span{
 }
 tr:nth-child(even){
     background-color: #e9e9e9;
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .blur{
+        display: none;
+    }
 }
