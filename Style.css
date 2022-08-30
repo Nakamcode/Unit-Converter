@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 :root{
-    --border-color: #9dffe1;
+    --border-color: #c3fbea;
 }
 *{
     margin: 0;
@@ -16,6 +16,33 @@ body{
     height: 100vh;
     background-image: linear-gradient(45deg, rgb(141, 185, 141),rgb(98, 98, 192));
 }
+
+.bg1{
+    top: 0;
+    left: 100px;
+    background-color: red;
+    z-index: -1;
+}
+.bg2{
+    bottom: 50px;
+    right: 10px;
+    background-color: green;
+    z-index: -1;
+}
+.bg3{
+    bottom: 50px;
+    right: 600px;
+    background-color: blue;
+    z-index: -1;
+}
+.blur{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    filter: blur(900px);
+    opacity: 0.4;
+}
+
 h3{
     text-align: center;
     padding-bottom: 1em;
