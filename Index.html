@@ -1,110 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
 
     <title>Unit Converter</title>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <div class="blur bg1"></div>
-        <div class="blur bg2"></div>
-        <div class="blur bg3"></div>
+      <div class="blur bg1"></div>
+      <div class="blur bg2"></div>
+      <div class="blur bg3"></div>
     </section>
-<main>
-        <h3>PX to EM converter</h3>
-        <div class="converter-form">
-
-            <div>
-                <label for="#">PX</label>
-                <input type="number" value="16" id="px-input" oninput="pxToEm()">
-            </div>
-
-            <div>
-                <label for="#">EM</label>
-                <input type="number"  id="em-input" oninput="emToPx()">
-            </div>
+    <main>
+      <h3>PX to EM converter</h3>
+      <div class="converter-form">
+        <div>
+          <label for="#">PX</label>
+          <input type="number" value="16" id="px-input" oninput="pxToEm()" />
         </div>
-        
-        <p> Calculation based on a font-size of <input type="number" value="16" id="parentValue" oninput="valueUpdate()"> pixel</p>
-        
-        <div class="value-table">
-            <table>
-                <tr>
-                    <td>10<span>px</span></td>
-                    <td>0.6<span>em</span></td>
-                </tr>
-                <tr>
-                    <td>15<span>px</span></td>
-                    <td>0.9<span>em</span></td>
-                </tr>
-                <tr>
-                    <td>20<span>px</span></td>
-                    <td>1.3<span>em</span></td>
-                </tr>
-                <tr>
-                    <td>25<span>px</span></td>
-                    <td>1.6<span>em</span></td>
-                </tr>
-                <tr>
-                    <td>30<span>px</span></td>
-                    <td>1.9<span>em</span></td>
-                </tr>
-                <tr>
-                    <td>35<span>px</span></td>
-                    <td>2.2<span>em</span></td>
-                </tr>
-                <tr>
-                    <td>40<span>px</span></td>
-                    <td>2.5<span>em</span></td>
-                </tr>
-                <tr>
-                    <td>45<span>px</span></td>
-                    <td>2.8<span>em</span></td>
-                </tr>
-            </table>
 
-            <table>
-                <tr>
-                    <td>2<span>em</span></td>
-                    <td>32<span>px</span></td>
-                </tr>
-                <tr>
-                    <td>4<span>em</span></td>
-                    <td>64<span>px</span></td>
-                </tr>
-                <tr>
-                    <td>6<span>em</span></td>
-                    <td>96<span>px</span></td>
-                </tr>
-                <tr>
-                    <td>8<span>em</span></td>
-                    <td>128<span>px</span></td>
-                </tr>
-                <tr>
-                    <td>10<span>em</span></td>
-                    <td>160<span>px</span></td>
-                </tr>
-                <tr>
-                    <td>12<span>em</span></td>
-                    <td>192<span>px</span></td>
-                </tr>
-                <tr>
-                    <td>14<span>em</span></td>
-                    <td>224<span>px</span></td>
-                </tr>
-                <tr>
-                    <td>16<span>em</span></td>
-                    <td>256<span>px</span></td>
-                </tr>
-            </table>
+        <div>
+          <label for="#">EM</label>
+          <input type="number" id="em-input" oninput="emToPx()" />
         </div>
-</main>
+      </div>
 
+      <p>
+        Calculation based on a font-size of
+        <input
+          type="number"
+          value="16"
+          id="parentValue"
+          oninput="valueUpdate()"
+        />
+        pixel
+      </p>
 
-<script src="Scripts.js"></script>
-</body>
+      <div class="value-table">
+        <table>
+          <tr>
+            <td>10<span>px</span></td>
+            <td>0.6<span>em</span></td>
+          </tr>
+          <tr>
+            <td>15<span>px</span></td>
+            <td>0.9<span>em</span></td>
+          </tr>
+          <tr>
+            <td>20<span>px</span></td>
+            <td>1.3<span>em</span></td>
+          </tr>
+          <tr>
+            <td>25<span>px</span></td>
+            <td>1.6<span>em</span></td>
+          </tr>
+          <tr>
+            <td>30<span>px</span></td>
+            <td>1.9<span>em</span></td>
+          </tr>
+          <tr>
+            <td>35<span>px</span></td>
+            <td>2.2<span>em</span></td>
+          </tr>
+          <tr>
+            <td>40<span>px</span></td>
+            <td>2.5<span>em</span></td>
+          </tr>
+          <tr>
+            <td>45<span>px</span></td>
+            <td>2.8<span>em</span></td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td>2<span>em</span></td>
+            <td>32<span>px</span></td>
+          </tr>
+          <tr>
+            <td>4<span>em</span></td>
+            <td>64<span>px</span></td>
+          </tr>
+          <tr>
+            <td>6<span>em</span></td>
+            <td>96<span>px</span></td>
+          </tr>
+          <tr>
+            <td>8<span>em</span></td>
+            <td>128<span>px</span></td>
+          </tr>
+          <tr>
+            <td>10<span>em</span></td>
+            <td>160<span>px</span></td>
+          </tr>
+          <tr>
+            <td>12<span>em</span></td>
+            <td>192<span>px</span></td>
+          </tr>
+          <tr>
+            <td>14<span>em</span></td>
+            <td>224<span>px</span></td>
+          </tr>
+          <tr>
+            <td>16<span>em</span></td>
+            <td>256<span>px</span></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <script src="Scripts.js"></script>
+  </body>
 </html>
