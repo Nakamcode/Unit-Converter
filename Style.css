@@ -25,11 +25,14 @@ main {
   background-color: #ffffff33;
   backdrop-filter: blur(100px);
   border: 2px solid var(--border-color);
-  padding: 20px;
+  padding: 1.25em;
+}
+.mesh-gradient {
+  display: none;
 }
 .bg1 {
   top: 0;
-  left: 100px;
+  left: 6.25em;
   background-color: red;
 }
 .bg2 {
@@ -66,7 +69,7 @@ label {
 input {
   border: 2px solid white;
   outline: none;
-  padding: 10px;
+  padding: 0.62em;
   font-size: 1.5em;
   width: 6em;
   background-color: transparent;
@@ -77,8 +80,8 @@ input:focus {
 }
 #parentValue {
   border: none;
-  font-size: 16px;
-  width: 50px;
+  font-size: 1em;
+  width: 3.1em;
   padding: 0;
   margin: 0;
 }
@@ -92,7 +95,7 @@ input:focus {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 1.25em;
   background-color: white;
 }
 p {
@@ -104,8 +107,8 @@ table {
   border-collapse: collapse;
 }
 td {
-  padding: 5px;
-  width: 70px;
+  padding: 0.3em;
+  width: 4.4em;
   text-align: center;
 }
 td span {
@@ -115,7 +118,7 @@ tr:nth-child(even) {
   background-color: #e9e9e9;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body {
     width: 100vw;
     height: 100vh;
@@ -123,4 +126,4 @@ tr:nth-child(even) {
   .blur {
     display: none;
   }
-}
+} */
