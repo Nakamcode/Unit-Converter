@@ -1,13 +1,10 @@
 var pixel = document.getElementById("px-input");
 var em = document.getElementById("em-input");
-var output;
 var parentValue = document.getElementById("parentValue");
-em.value = pixel.value / parentValue.value;
+var output;
 
-valueUpdate = () => {
-  pxToEm();
-  emToPx();
-};
+// convert the default pixel value to em
+em.value = pixel.value / parentValue.value;
 
 pxToEm = () => {
   output = pixel.value / parentValue.value;
@@ -17,4 +14,9 @@ pxToEm = () => {
 emToPx = () => {
   output = em.value * parentValue.value;
   pixel.value = parseFloat(output.toFixed(0));
+};
+
+valueUpdate = () => {
+  pxToEm();
+  emToPx();
 };
